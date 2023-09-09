@@ -19,7 +19,7 @@ ssh user@hostname
 apt install docker jq bc intel-gpu-tools
 
 # clone the git repo with the script
-https://github.com/ironicbadger/quicksync_calc.git
+git clone https://github.com/ironicbadger/quicksync_calc.git
 
 # change directory into the cloned repo
 cd quicksync_calc
