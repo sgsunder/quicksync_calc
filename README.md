@@ -1,7 +1,7 @@
 Runs an ffmpeg benchmark to get Average Speed, FPS, and Watts
 ===========================================
 
-The purpose of this script is benchmark Intel Quick Sync Video performance in integrated iGPUs using a standardised video. More information and rationale is available [here at blog.ktz.me](https://blog.ktz.me/i-need-your-help-with-intel-quick-sync-benchmarking/).
+The purpose of this script is benchmark Intel Quick Sync Video performance in integrated iGPUs using a standardised video. More information and rationale is available [at blog.ktz.me](https://blog.ktz.me/i-need-your-help-with-intel-quick-sync-benchmarking/).
 
 REQUIREMENTS
 ------------
@@ -14,7 +14,7 @@ This should be run as root with no other applications/containers running that wo
 HOW TO USE
 ------------
 
-Full instructions [here at blog.ktz.me](https://blog.ktz.me/i-need-your-help-with-intel-quick-sync-benchmarking/).
+Full instructions available at [blog.ktz.me](https://blog.ktz.me/i-need-your-help-with-intel-quick-sync-benchmarking/).
 
 ```
 # connect to the system you want the benchmark on (likely via ssh)
