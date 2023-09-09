@@ -1,5 +1,10 @@
-Runs a ffmpeg benchmark to get Average Speed, FPS, and Watts
+Runs an ffmpeg benchmark to get Average Speed, FPS, and Watts
 ===========================================
+
+The purpose of this script is benchmark Intel Quick Sync Video performance in integrated iGPUs using a standardised video. More information and rationale is available [here at blog.ktz.me](https://blog.ktz.me/i-need-your-help-with-intel-quick-sync-benchmarking/).
+
+REQUIREMENTS
+------------
 
 Requires Docker, Intel CPU w/ QuickSync, printf, and intel-gpu-tools package. Designed for Linux. Tested on Proxmox 8 and Ubuntu 22.04.
 
