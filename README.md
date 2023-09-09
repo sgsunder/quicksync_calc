@@ -1,23 +1,39 @@
-Runs a ffmpeg benchmark to get Avergage Speed, FPS, and Watts
+Runs a ffmpeg benchmark to get Average Speed, FPS, and Watts
 ===========================================
 
-Requires Docker, Intel CPU w/ QuickSync, printf, and intel-gpu-tools package
+Requires Docker, Intel CPU w/ QuickSync, printf, and intel-gpu-tools package. Designed for Linux. Tested on Proxmox 8 and Ubuntu 22.04.
 
-This should be run as root with no other applications/containers running that would utilize quicksync. This includes DEs.
+This should be run as root with no other applications/containers running that would utilize quicksync. This includes Desktop Environments.
 
 
 HOW TO USE
 ------------
 
-Ensure Docker is installed and running, you have an Intel CPU w/ QuickSync, you have printf installed `which printf`, you have intel-gpu-tools installed `which intel_gpu_top`, and you are running as root.
+Full instructions [here at blog.ktz.me](https://blog.ktz.me/i-need-your-help-with-intel-quick-sync-benchmarking/).
 
-Clone this repo.
+```
+# connect to the system you want the benchmark on (likely via ssh)
+ssh user@hostname
 
-`git clone https://github.com/cptmorgan-rh/quicksync_calc.git`
+# install a couple of dependencies (script tested on proxmox 8 + ubuntu 22.04)
+apt install docker jq bc intel-gpu-tools
 
-`$ ./video-download.sh`
+# clone the git repo with the script
+https://github.com/ironicbadger/quicksync_calc.git
 
-`$ ./quicksync-benchmark.sh`
+# change directory into the cloned repo
+cd quicksync_calc
+
+# download the test videos
+./video-download.sh
+
+# run the benchmark
+./quicksync-benchmark.sh
+
+# copy your results into the following github gist as a comment
+https://gist.github.com/ironicbadger/5da9b321acbe6b6b53070437023b844d
+```
+
 
 Check out the results.
 
