@@ -57,7 +57,6 @@ stop_container(){
 
   if $(docker inspect jellyfin-qsvtest | jq -r '.[].State.Running'); then
     docker stop jellyfin-qsvtest > /dev/null
-    docker rmi jellyfin/jellyfin > /dev/null
   fi
 
 }
@@ -127,7 +126,7 @@ main(){
     cpu_model=$(grep -m1 'model name' /proc/cpuinfo | awk '{ print $6 }')
   fi
 
-  benchmarks h264_1080p_cpu ribblehead_1080p_h264
+  # benchmarks h264_1080p_cpu ribblehead_1080p_h264
 
   benchmarks h264_1080p ribblehead_1080p_h264
 
